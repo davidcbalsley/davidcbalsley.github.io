@@ -34,69 +34,72 @@ body {
     font-weight: bold;
   }
   
-  /* NAV START */
-  #logo {
-    font-family: Georgia, Times, "Times New Roman", serif;
-  
-    /* Typography */
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-  
-    /* Visual */
-    background: #4aaaa5;
-  }
-  
-  /* override bootstrap hover color and border */
-  .navbar-default .navbar-nav > li > a:hover {
-    color: #4aaaa5;
-  }
-  
-  .navbar {
-    background: white;
-    border: none;
-  }
-  
-  /* media query for nav background color change */
-  @media only screen and (max-width: 767px) {
-    .navbar-header {
-      background-color: #4aaaa5;
-    }
-  }
-  
+/* NAV START */
+#logo {
+  font-family: Georgia, Times, "Times New Roman", serif;
 
-.about-me-header {
-    /* Positioning */
-    margin-bottom: 33px;
-    font-family: Georgia, Times, "Times New Roman", serif;
+  /* Typography */
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+
+  /* Visual */
+  background: #4aaaa5;
+}
   
-    /* Typography */
-    font-size: 32px;
-    font-weight: bold;
-    color: #4aaaa5;
+/* override bootstrap hover color and border */
+.navbar-default .navbar-nav > li > a:hover {
+  color: #4aaaa5;
+}
+
+.navbar {
+  background: white;
+  border: none;
+}
+
+/* media query for nav background color change */
+@media only screen and (max-width: 767px) {
+  .navbar-header {
+    background-color: #4aaaa5;
   }
+}
+  
+.about-me-header {
+  /* Positioning */
+  margin-bottom: 33px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+
+  /* Typography */
+  font-size: 32px;
+  font-weight: bold;
+  color: #4aaaa5;
+}
 
 #about-image {
-    /* Positioning */
-    float: left;
-  
-    /* Box-model */
-    width: 200px;
-    margin: 0 20px 10px 0;
-  }
+  /* Positioning */
+  float: left;
 
-  .footer {
-    /* Positioning */
-    position: absolute;
-    bottom: 0;
-  
-    /* Box-model */
-    width: 100%;
-    height: 60px;
-  
-    /* Visual */
-    background-color: #666;
-  }
+  /* Box-model */
+  width: 200px;
+  margin: 0 20px 10px 0;
+}
+
+.footer {
+  /* Positioning */
+  position: absolute;
+  bottom: 0;
+
+  /* Box-model */
+  width: 100%;
+  height: 60px;
+
+  /* Visual */
+  background-color: #666;
+}
+
+.port-image {
+  margin: 20px auto;
+}
 
 
 .portfolio-cell {
