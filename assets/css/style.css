@@ -99,15 +99,20 @@ body {
 
 .port-image {
   margin: 20px auto;
+  z-index: -1;
+  padding: 0;
 }
 
+.text-over-img {
+  z-index: 1;
+  margin-top: -150px;
 
-.portfolio-cell {
-    position: relative;
-}
+  /* Typography */
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
 
-.portfolio-cell h3 {
-    bottom: 50px;
-    position: absolute;
-    text-align: center;
+  /* Visual */
+  background: #4aaaa5;
 }
