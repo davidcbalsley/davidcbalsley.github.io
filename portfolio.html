@@ -15,42 +15,35 @@
 </head>
 <body>
     <!-- Navbar -->
-    <!-- <nav class="navbar"> -->
-    <!-- <nav class="navbar navbar-expand-sm"> -->
-        <nav class="navbar navbar-expand-lg navbar-fixed-top">
-            <div class="container">
-                <h1 class="navbar-brand">David C. Balsley</h1>
-                <!-- <div class="navbar-header"> -->
-                    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        
-                        <!-- <span class="navbar-toggler-icon"></span> -->
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- <h1 class="navbar-brand">David C. Balsley</h1> -->
-                <!-- </div> -->
-                <div id="navbar" class="navbar-collapse collapse">
-                    <!-- Navigation -->
-                    <ul class="nav navbar-nav">
-                        <li class="hidden">
-                            <a href="#page-top"></a>
-                        </li>
-    
-                        <!-- About -->
-                        <li><a class="nav-btn" href="#">About</a></li>
-    
-                        <!-- Portfolio -->
-                        <li class="nav-btn"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-    
-                        <!-- Contact -->
-                        <li class="nav-btn"><a class="nav-link" href="contact.html">Contact</a></li>
-            
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" id="logo">David C. Balsley</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarTogglerDCB" aria-expanded="false" aria-controls="navbarTogglerDCB" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collect the new links for toggling -->
+            <div id="navbarTogglerDCB" class="navbar-collapse collapse">
+                <!-- Navigation -->
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+
+                    <!-- About -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+
+                    <!-- Portfolio -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>       
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
     <div class="container main-content">
 
@@ -131,10 +124,11 @@
     </div>
 
     <!-- Footer -->
-    <footer class="page-footer footer-style">
-        <div class="container">
-            <span>Copyright ©</span>
-        </div>
+    <footer class="footer">
+        <div class="two-toned-footer-color"></div>
+        <p class="text-muted text-muted-footer text-center">
+          &copy; Copyright
+        </p>
     </footer>
 
 </body>
