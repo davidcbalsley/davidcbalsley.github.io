@@ -6,83 +6,82 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <!-- My CSS -->
     <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
-    <!-- <script src='main.js'></script> -->
 
     <title>David Balsley</title>
 </head>
 <body>
-
     <!-- Navbar -->
-    <!-- <nav class="navbar"> -->
-    <!-- <nav class="navbar navbar-expand-sm"> -->
-    <nav class="navbar navbar-expand-lg navbar-fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <h1 class="navbar-brand">David C. Balsley</h1>
-            <!-- <div class="navbar-header"> -->
-                <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    
-                    <!-- <span class="navbar-toggler-icon"></span> -->
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- <h1 class="navbar-brand">David C. Balsley</h1> -->
-            <!-- </div> -->
-            <div id="navbar" class="navbar-collapse collapse">
+            <a class="navbar-brand" href="index.html" id="logo">David C. Balsley</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarTogglerDCB" aria-expanded="false" aria-controls="navbarTogglerDCB" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collect the new links for toggling -->
+            <div id="navbarTogglerDCB" class="navbar-collapse collapse">
                 <!-- Navigation -->
-                <ul class="nav navbar-nav">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
 
                     <!-- About -->
-                    <li><a class="nav-btn" href="#">About</a></li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
 
                     <!-- Portfolio -->
-                    <li class="nav-btn"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
 
                     <!-- Contact -->
-                    <li class="nav-btn"><a class="nav-link" href="contact.html">Contact</a></li>
-        
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>       
                 </ul>
             </div>
         </div>
     </nav>
- 
-    <div class="container main-content clearfix">
+    
+    <!-- Image and text of About -->
+    <main class="containter">
+        <section class="row">
+            <div class="col-md-8">
+                <article class="block">
+                    <h1 class="block-header">About Me</h1>
 
-        <h2>About Me</h2>
+                    <!-- Horizontal rule -->
+                    <hr />
 
-        <!-- Horizontal rule -->
-        <hr />
+                    <!-- My photograph -->
+                    <img src="assets/images/self-portrait.jpeg" alt="David Balsley photo" id="about-image"/>
 
-        <!-- My photograph -->
-        <img class="bio-image float-left" src="assets/images/self-portrait.jpeg" alt="David Balsley photo">
+                    <!-- A paragraph or two about me -->
+                    <p>
+                        I work at the University of Chicago Press within the Journals Subscription Fulfillment group. In my role as Customer Communications and Quality Control Coordinator, I design queries to check the accuracy of our subscription data. I also reach out to institutional and individual subscribers to ensure that they continue their subscriptions with us year after year. It's always best when someone renews.
+                    </p>
 
-        <!-- A paragraph or two about me -->
-        <p>
-            I work at the University of Chicago Press within the Journals Subscription Fulfillment group. In my role as Customer Communications and Quality Control Coordinator, I design queries to check the accuracy of our subscription data. I also reach out to institutional and individual subscribers to ensure that they continue their subscriptions with us year after year. It's always best when someone renews.
-        </p>
-
-        <p>
-            I also serve as an administrator for our group's Salesforce instance. This position has given me the chance to develop on the Salesforce platform. I find few things as engrossing as taking on a programming task: I get excited about focusing on a challenge, and I love having the chance to act on inspiration that comes in the middle of the night.
-        </p>
-
-        <p>
-            Incidentally, the middle of the night is when my cat wants his breakfast. He's lucky that he's otherwise adorable.
-        </p>
-
-    </div>
+                    <p>
+                        I also serve as an administrator for our group's Salesforce instance. This position has given me the chance to develop on the Salesforce platform. I find few things as engrossing as taking on a programming task: I get excited about focusing on a challenge, and I love having the chance to act on inspiration that comes in the middle of the night.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="page-footer footer-style">
-        <div class="container">
-            <span>Copyright ©</span>
-        </div>
+    <footer class="footer">
+        <div class="two-toned-footer-color"></div>
+        <p class="text-muted text-muted-footer text-center">
+          &copy; Copyright
+        </p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </body>
 </html>
