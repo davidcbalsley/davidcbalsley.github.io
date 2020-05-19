@@ -3,44 +3,86 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Class Notes</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script> -->
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
+    <!-- <script src='main.js'></script> -->
+
+    <title>David Balsley</title>
 </head>
 <body>
-    <p>Low-tech table of contents</p>
-    <ul>
-        <li>
-            <a href="#9.1">9.1 -- Intro to Node, Inquirer</a>
-        </li>
-    </ul>
 
-    <a id="9.1">9.1 -- Intro to Node, Inquirer</a>
-    <ul>
-        <li>
-            Inquirer template:<br />
-            <pre>
-            <code>
-    var inquirer = require("inquirer");
-                
-    inquirer
-        .prompt([
-            {
-                type: "...",
-                message: "...",
-                name: "..."
-            },
-            {
-                ...
-            }
-        ])
-        .then(function(response) {
-            ...
-        });
-            </code>
-            </pre>
-        </li>
-    </ul>
+    <!-- Navbar -->
+    <!-- <nav class="navbar"> -->
+    <!-- <nav class="navbar navbar-expand-sm"> -->
+    <nav class="navbar navbar-expand-lg navbar-fixed-top">
+        <div class="container">
+            <h1 class="navbar-brand">David C. Balsley</h1>
+            <!-- <div class="navbar-header"> -->
+                <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- <h1 class="navbar-brand">David C. Balsley</h1> -->
+            <!-- </div> -->
+            <div id="navbar" class="navbar-collapse collapse">
+                <!-- Navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+
+                    <!-- About -->
+                    <li><a class="nav-btn" href="#">About</a></li>
+
+                    <!-- Portfolio -->
+                    <li class="nav-btn"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+
+                    <!-- Contact -->
+                    <li class="nav-btn"><a class="nav-link" href="contact.html">Contact</a></li>
+        
+                </ul>
+            </div>
+        </div>
+    </nav>
+ 
+    <div class="container main-content clearfix">
+
+        <h2>About Me</h2>
+
+        <!-- Horizontal rule -->
+        <hr />
+
+        <!-- My photograph -->
+        <img class="bio-image float-left" src="assets/images/self-portrait.jpeg" alt="David Balsley photo">
+
+        <!-- A paragraph or two about me -->
+        <p>
+            I work at the University of Chicago Press within the Journals Subscription Fulfillment group. In my role as Customer Communications and Quality Control Coordinator, I design queries to check the accuracy of our subscription data. I also reach out to institutional and individual subscribers to ensure that they continue their subscriptions with us year after year. It's always best when someone renews.
+        </p>
+
+        <p>
+            I also serve as an administrator for our group's Salesforce instance. This position has given me the chance to develop on the Salesforce platform. I find few things as engrossing as taking on a programming task: I get excited about focusing on a challenge, and I love having the chance to act on inspiration that comes in the middle of the night.
+        </p>
+
+        <p>
+            Incidentally, the middle of the night is when my cat wants his breakfast. He's lucky that he's otherwise adorable.
+        </p>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer footer-style">
+        <div class="container">
+            <span>Copyright ©</span>
+        </div>
+    </footer>
 </body>
 </html>
